@@ -1,0 +1,147 @@
+
+nav{
+    width: 100%;
+    height: 300px;
+}
+.background{
+    background: url("./../media/navi.jpg");
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+/*on scrolled*/
+.background.active{
+    background: none;
+}
+.background.active .first{
+    display: none;
+}
+/**/
+.background .first div{
+    background-color: #fefefe;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF2B2B;
+    text-align: center;
+    font-family: Hind Madurai;
+    border-radius: 20px;
+    padding: 0.25rem;
+}
+.background .second{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+.background .second ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #fefefe;
+    border-radius: 5px;
+    text-align: center;
+}
+.background .second ul li{
+    list-style-type: none;
+    padding: 0.75rem;
+}
+.background .second ul li a{
+    color: #FF2B2B;
+    text-decoration: none;
+    font-family: Hind Madurai;
+}
+.background .second ul li a:hover{
+    color: #ff3e3e;
+}
+
+/*fabars*/
+.third{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: #fefefe;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    font-size: 36px;
+    cursor: pointer;
+}
+/**/
+/*on scrolled*/
+.background.active .second{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+}
+.background.active .second ul{
+    width: 100%;
+    background-color: #ff3e3e;
+}
+.background.active .second ul li a{
+    color: #fefefe;
+}
+.background.active .second ul li a:hover{
+    color: #faa5a5;
+}
+.background.active .close{
+    color: #fefefe;
+}
+/**/
+
+/*mobile detection*/
+.mobile-detected .first{
+    display: none;
+}
+.mobile-detected .second{
+    display: none;
+}
+.none{
+    display: none;
+}
+.close.active{
+    display: flex;
+}
+.close{
+    display: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #ff3e3e;
+}
+/**/
+
+/*mobile menu*/
+.second.clicked{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0;
+}
+.second.clicked ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+/**/
+@media only screen and (max-width: 700px) {
+    .third{
+        display: flex;
+    }
+}

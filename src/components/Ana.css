@@ -1,0 +1,14 @@
+.main h1 , .main p{
+    color: #dbdfdf;
+    font-family: Hind Madurai;
+}
+.main{
+    margin: 1rem;
+}
+.main-first{
+    margin-left: 1rem;
+}
+.main span{
+    font-style: italic;
+    color: #fefefe;
+}
